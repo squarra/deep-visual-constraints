@@ -16,3 +16,6 @@ dependencies = [
     "torchvision>=0.22.1",
     "trimesh>=4.7.0",
 ]
+
+[tool.ruff]
+line-length = 150

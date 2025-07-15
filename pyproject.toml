@@ -1,21 +1,36 @@
 [project]
-name = "deep-visual-constraints"
+name = "dvc"
 version = "0.1.0"
 description = "Neural Implicit Models for Manipulation Planning from Visual Input"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = "==3.11.13"
 dependencies = [
     "h5py>=3.14.0",
     "ipykernel>=6.29.5",
     "matplotlib>=3.10.3",
+    "mesh-to-sdf>=0.0.15",
     "numpy>=2.3.1",
     "pyglet<2",
+    "robotic>=0.3.2",
     "scikit-image>=0.25.2",
     "scipy>=1.16.0",
+    "tensorboard>=2.19.0",
     "torch>=2.7.1",
     "torchvision>=0.22.1",
+    "tqdm>=4.67.1",
     "trimesh>=4.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "dvc",
 ]
 
 [tool.ruff]
 line-length = 150
+
+[tool.setuptools]
+py-modules = []
+
+[tool.uv.sources]
+dvc = { workspace = true }

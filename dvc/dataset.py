@@ -7,7 +7,7 @@ from os import path
 import numpy as np
 from torchvision import transforms
 
-from src.utils import *
+from dcv.utils import *
 import matplotlib.pyplot as plt
 
 import scipy

@@ -12,9 +12,9 @@ import matplotlib.pyplot as plt
 from .data_gen_utils import *
 import scipy
 import torch
-from src.frame import Frame
-from src.feature import KeyPoint_Feature, JIT_Collision_Feature, JIT_Keypoint_Feature, JIT_ICP_Feature #, JIT_PoseEstimation_Feature
-from src.utils import *
+from dcv.frame import Frame
+from dcv.feature import KeyPoint_Feature, JIT_Collision_Feature, JIT_Keypoint_Feature, JIT_ICP_Feature #, JIT_PoseEstimation_Feature
+from dcv.utils import *
 
 class Simulation:
     def __init__(self, worldFileName, mug_inds=[], mug_poses=[], verbose=1, addBalls=False, sort=False, addImp=False):
